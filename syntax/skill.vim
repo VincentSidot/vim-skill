@@ -24,6 +24,7 @@ syntax keyword skillKeywords begin declare declareN declareSQN declareLambda def
             \ defprop defstruct defun define defUserInitProc 
             \ defvar lambda last let letseq letrec 
             \ list procedure prog return
+            \ defglobalfun defclass defmethod
 
 syntax keyword skillRepeat go for forall foreach while 
 
@@ -60,6 +61,7 @@ syntax keyword skillFunction abs acos cos add1 addDefstructClass alias
             \ remove remprop remq reverse rexCompile rexExecute rexMagic
             \ rexMatchAssocList rexMatchList rexMatchp rexReplace
             \ rexSubstitute rindex round rplacad schemeTopLevelEnv set setq
+            \ setf
             \ setSGq setSG setarray setcdr setcadr setFnWriteProtect setof
             \ setplist setShellEnvVar setSkillPath setVarWriteProtect sh shell
             \ simplifyFilename sort sortcar sqrt srandom sstatus strn strncat
