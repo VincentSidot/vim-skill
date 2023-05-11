@@ -13,7 +13,6 @@ if exists("b:current_syntax")
     finish
 endif
 
-echom "Setting SKILL syntax"
 
 let b:current_syntax = "skill"
 
