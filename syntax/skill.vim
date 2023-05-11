@@ -1,7 +1,8 @@
 " Vim syntax file
 " Language:     SKILL / SKILL ++
 " License:      Same as VIM
-" Authors:      Yannick Uhlmann <ynk2401@gmail.com>
+" Authors:      Yannick Uhlmann <ynk2401@gmail.com> 
+" Edition:      Vincent S <v.sidot@aniah.fr>
 " URL:          http://github.com/augustunderground/vim-skill
 "
 " Based on Morten Linderud's (mcfoxax@gmail.com) and Alejandro Gómez's (alejandro@dialelo.com)
@@ -11,6 +12,8 @@
 if exists("b:current_syntax")
     finish
 endif
+
+echom "Setting SKILL syntax"
 
 let b:current_syntax = "skill"
 
@@ -55,7 +58,7 @@ syntax keyword skillFunction abs acos cos add1 addDefstructClass alias
             \ minusp mod nconc ncons needNCells negativep neq nequal newline
             \ nindex not nth nthcdr nthelem null numberp numOpenFiles oddp
             \ onep otherp outfile outportp pairp parseString plist plusp portp
-            \ p\=print prependInstallPath print println procedurep putd
+            \ p print prependInstallPath print println procedurep putd
             \ putpropq putpropqq random read readString readTable realp
             \ regExitAfter regExitBefore remainder remdq remd remExitProc
             \ remove remprop remq reverse rexCompile rexExecute rexMagic
