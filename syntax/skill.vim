@@ -76,17 +76,17 @@ syntax keyword skillFunction abs acos cos add1 addDefstructClass alias
 " DFII procedural interface routines
 
 " CDF functions
-syn match skillcdfFunctions  "(cdf[a-zA-Z0-9_+]\* "
-syn match skillgeFunctions   "(ge[a-zA-Z0-9_+]\* "
-syn match skillhiFunctions   "(hi[a-zA-Z0-9_+]\* " 
-syn match skillleFunctions   "(le[a-zA-Z0-9_+]\* "
-syn match skilldbefFunctions "(db[a-zA-Z0-9_+]\* "
-syn match skilldbefFunctions "(de[a-zA-Z0-9_+]\* "
-syn match skilldbefFunctions "(df[a-zA-Z0-9_+]\* "
-syn match skillddFunctions   "(dd[a-zA-Z0-9_+]\* "
-syn match skillpcFunctions   "(pc[a-zA-Z0-9_+]\* "
-syn match skilltechFunctions "(tc[a-zA-Z0-9_+]\* "
-syn match skilltechFunctions "(tech[a-zA-Z0-9_+]\* "
+syn match skillcdfFunctions  "(cdf\w\+ "
+syn match skillgeFunctions   "(ge\w\+ "
+syn match skillhiFunctions   "(hi\w\+ "
+syn match skillleFunctions   "(le\w\+ "
+syn match skilldbefFunctions "(db\w\+ "
+syn match skilldbefFunctions "(de\w\+ "
+syn match skilldbefFunctions "(df\w\+ "
+syn match skillddFunctions   "(dd\w\+ "
+syn match skillpcFunctions   "(pc\w\+ "
+syn match skilltechFunctions "(tc\w\+ "
+syn match skilltechFunctions "(tech\w\+ "
 
 " strings
 syn region skillString				start=+"+ skip=+\\"+ end=+"+
