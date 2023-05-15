@@ -38,7 +38,7 @@ syntax keyword skillFunction abs acos cos add1 addDefstructClass alias
             \ cdadar cdaddr cdadr cdar cddaar cddadr cddar cdddar cddddr cdddr 
             \ cddr caaar caadr cadar caddr cdadr cadaar cadadr caddar cadddr 
             \ cdaaar cdaadr cdadar cdaddr charToInt clearExitProcs close 
-            \ compareTime compress concat cons copy copyDefstructDeep createDir 
+            \ compareTime compress concat strcat cons copy copyDefstructDeep createDir 
             \ csh defstructp delete deleteDir deleteFile display drain dtpr
             \ edit envobj equal eqv err error errset errsetstring eval
             \ evalstring evenp exists exit exp expandMacro file fileLength
