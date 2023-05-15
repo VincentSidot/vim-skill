@@ -76,31 +76,31 @@ syntax keyword skillFunction abs acos cos add1 addDefstructClass alias
 " DFII procedural interface routines
 
 " CDF functions
-syn match skillcdfFunctions  "\ccdf\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skillcdfFunctions  "\(cdf\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " graphic editor functions
-syn match skillgeFunctions   "\cge\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skillgeFunctions   "\(ge\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " human interface functions
-syn match skillhiFunctions   "\chi\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skillhiFunctions   "\(hi\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " layout editor functions
-syn match skillleFunctions   "\cle\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skillleFunctions   "\(le\{1,2}[a-z0-9?!\-_+*.=<>#$]\÷ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " database|design editor|design flow functions
-syn match skilldbefFunctions "\cdb\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
-syn match skilldbefFunctions "\cde\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
-syn match skilldbefFunctions "\cdf\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skilldbefFunctions "\(db\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
+syn match skilldbefFunctions "\(de\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
+syn match skilldbefFunctions "\(df\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " design management & design data services functions
-syn match skillddFunctions   "\cdd\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skillddFunctions   "\(dd\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " parameterized cell functions
-syn match skillpcFunctions   "\cpc\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skillpcFunctions   "\(pc\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " tech file functions
-syn match skilltechFunctions "\ctech\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
-syn match skilltechFunctions "\ctc\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\(/[a-z0-9?!\-_+*.=<>#$]\+\)\?"
+syn match skilltechFunctions "\(tech\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
+syn match skilltechFunctions "\(tc\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\ [a-z0-9?!\-_+*.=<>#$ ]\+\)"
 
 " strings
 syn region skillString				start=+"+ skip=+\\"+ end=+"+
