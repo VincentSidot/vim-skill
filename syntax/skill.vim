@@ -76,31 +76,17 @@ syntax keyword skillFunction abs acos cos add1 addDefstructClass alias
 " DFII procedural interface routines
 
 " CDF functions
-syn match skillcdfFunctions  "\(cdf\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-
-" graphic editor functions
-syn match skillgeFunctions   "\(ge\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-
-" human interface functions
-syn match skillhiFunctions   "\(hi\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-
-" layout editor functions
-syn match skillleFunctions   "\(le\{1,2}[a-z0-9?!\-_+*.=<>#$]\÷ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-
-" database|design editor|design flow functions
-syn match skilldbefFunctions "\(db\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-syn match skilldbefFunctions "\(de\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-syn match skilldbefFunctions "\(df\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-
-" design management & design data services functions
-syn match skillddFunctions   "\(dd\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-
-" parameterized cell functions
-syn match skillpcFunctions   "\(pc\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-
-" tech file functions
-syn match skilltechFunctions "\(tech\{1,2}[a-z0-9?!\-_+*.=<>#$]\+ /[a-z0-9?!\-_+*.=<>#$ ]\+\)"
-syn match skilltechFunctions "\(tc\{1,2}[a-z0-9?!\-_+*.=<>#$]\+\ [a-z0-9?!\-_+*.=<>#$ ]\+\)"
+syn match skillcdfFunctions  "(cdf[a-zA-Z0-9_+]\* "
+syn match skillgeFunctions   "(ge[a-zA-Z0-9_+]\* "
+syn match skillhiFunctions   "(hi[a-zA-Z0-9_+]\* " 
+syn match skillleFunctions   "(le[a-zA-Z0-9_+]\* "
+syn match skilldbefFunctions "(db[a-zA-Z0-9_+]\* "
+syn match skilldbefFunctions "(de[a-zA-Z0-9_+]\* "
+syn match skilldbefFunctions "(df[a-zA-Z0-9_+]\* "
+syn match skillddFunctions   "(dd[a-zA-Z0-9_+]\* "
+syn match skillpcFunctions   "(pc[a-zA-Z0-9_+]\* "
+syn match skilltechFunctions "(tc[a-zA-Z0-9_+]\* "
+syn match skilltechFunctions "(tech[a-zA-Z0-9_+]\* "
 
 " strings
 syn region skillString				start=+"+ skip=+\\"+ end=+"+
