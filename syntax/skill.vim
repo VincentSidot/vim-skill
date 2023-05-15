@@ -76,14 +76,14 @@ syntax keyword skillFunction abs acos cos add1 addDefstructClass alias
 " DFII procedural interface routines
 
 " CDF functions
-syn match skillcdfFunctions  "\((\)\@<=cdf[A-Z][a-zA-Z0-9_]\*\( \)\@="
-syn match skillgeFunctions   "\((\)\@<=ge[A-Z][a-zA-Z0-9_]\*\( \)\@="
-syn match skillhiFunctions   "\((\)\@<=hi[A-Z][a-zA-Z0-9_]\*\( \)\@="
-syn match skillleFunctions   "\((\)\@<=le[A-Z][a-zA-Z0-9_]\*\( \)\@="
-syn match skilldbefFunctions "\((\)\@<=d[bef][A-Z][a-zA-Z0-9_]\*\( \)\@="
-syn match skillddFunctions   "\((\)\@<=dd[A-Z][a-zA-Z0-9_]\*\( \)\@="
-syn match skillpcFunctions   "\((\)\@<=pc[A-Z][a-zA-Z0-9_]\*\( \)\@="
-syn match skilltechFunctions "\((\)\@<=\(tech\|tc\)[A-Z][a-zA-Z0-9_]\*\( \)\@="
+syn match skillcdfFunctions  "\((\)\@<=cdf[A-Z][a-zA-Z0-9_]\+\( \)\@="
+syn match skillgeFunctions   "\((\)\@<=ge[A-Z][a-zA-Z0-9_]\+\( \)\@="
+syn match skillhiFunctions   "\((\)\@<=hi[A-Z][a-zA-Z0-9_]\+\( \)\@="
+syn match skillleFunctions   "\((\)\@<=le[A-Z][a-zA-Z0-9_]\+\( \)\@="
+syn match skilldbefFunctions "\((\)\@<=d[bef][A-Z][a-zA-Z0-9_]\+\( \)\@="
+syn match skillddFunctions   "\((\)\@<=dd[A-Z][a-zA-Z0-9_]\+\( \)\@="
+syn match skillpcFunctions   "\((\)\@<=pc[A-Z][a-zA-Z0-9_]\+\( \)\@="
+syn match skilltechFunctions "\((\)\@<=\(tech\|tc\)[A-Z][a-zA-Z0-9_]\+\( \)\@="
 
 " strings
 syn region skillString				start=+"+ skip=+\\"+ end=+"+
