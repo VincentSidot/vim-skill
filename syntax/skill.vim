@@ -39,7 +39,6 @@ syn match skillNumber                                       "\v<[-+]?%(0|[1-9]\d
 syn match skillNumber                                       "\v<[-+]?%(0|[1-9]\d*)/%(0|[1-9]\d*)>"
 syn match skillAtomFunction                                 "\c\v(\(\s?)@<=[a-z0-9_]+"
 syn match skillFunctionDefinition                           "\c\v(\(defglobalfun|defun|defclass|defmethod)@<=\s[a-z0-9_]+"
-syn match skillSetVariable                                  "\c\v(\(set\w)@<=\s[a-z0-9_]+"
 syn match skillCondition                                    "\c\v(\(unless|if|when)@<=\s[a-z0-9_]+"
 
 
@@ -47,7 +46,7 @@ syn region skillAtom                                    start="(" end=")"
             \contains=skillString,skillVarArg,skillSymbol,skillArrow,skillSquiggle,
                     \ skillNumber,skillAtomFunction,skillConstants,skillConditional,
                     \ skillRepeat,skillKeywords,skillComment, skillKeywordArgument,
-                    \ skillFunctionDefinition, skillSetVariable, skillCondition
+                    \ skillFunctionDefinition, skillCondition
 
 hi def link skillCondition                                  Number
 hi def link skillRepeat                                     Repeat
@@ -63,14 +62,19 @@ hi def link skillKeywordArgument                            Keyword
 hi def link skillNumber                                     Number
 hi def link skillConstants                                  Boolean
 hi def link skillFunctionDefinition                         SpecialChar
-hi def link skillSetVariable                                SpecialChar
 
+
+syn keyword skillTodo contained		TODO FIXME XXX
+syn keyword skillNote contained		NOTE IMPORTANT
 
 " comments are either C-style or begin with a semicolon
-syn region skillComment				start="/\*" end="\*/"
-syn match skillComment				";.*"
-syn sync ccomment skillComment minlines=10
+syn region skillComment				start="/\*" end="\*/" contains=skillTodo,skillNote
+syn match skillComment				";.*" contains=skillTodo,skillNote
+syn match skillCommentError			"\*/"
 
-hi def link skillComment		Comment
+hi def link skillComment		     Comment
+hi def link skillCommentError                        Error
+hi def link skillTodo                                Todo
+hi def link skillNote                                Todo
 
 let b:current_syntax = "skill"
